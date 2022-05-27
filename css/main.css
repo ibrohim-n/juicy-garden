@@ -69,6 +69,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
@@ -159,6 +160,15 @@ main {
   border-radius: 110px;
   cursor: pointer;
 }
+
+.language__chkbx:focus {
+  outline: none;
+}
+.language__chkbx:active {
+  outline: none;
+}
+
+
 
 .language__chkbx:checked~.switch-circle {
   transform: translateX(45px);
@@ -453,6 +463,15 @@ main {
   }
 
   /*INDEX HEADER TABLET  */
+  .main-logo:hover {
+    opacity: 1
+  }
+  
+  .main-logo:active {
+    opacity: 1;
+  }
+
+
   .header-hero-wrapper {
     background-image: url("../images/hero-bg-tablet.png");
   }

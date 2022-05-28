@@ -1086,7 +1086,9 @@ main {
   /* INDEX HEADER MOBILE*/
   .header-hero-wrapper {
     background-image: url("../images/hero-bg-mobile.png");
+    background-size: cover;
   }
+
 
   .site-header {
     padding-top: 20px;

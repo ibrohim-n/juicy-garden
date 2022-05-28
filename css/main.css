@@ -63,6 +63,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -246,12 +247,12 @@ main {
   margin-bottom: 24px;
 }
 
-.very-berry {
+.very-berry-img {
   width: 200px;
   height: 51px;
 }
 
-.tashkentskiye-sadi {
+.tashkentskiye-sadi-img {
   width: 181px;
   height: 73px;
 }
@@ -440,6 +441,328 @@ main {
 }
 
 
+/* VERY_BERRY HEADER */
+.btn-scroll-top {
+  width: 56px;
+  height: 56px;
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 16px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-image: url("../images/icon-arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 14px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  z-index: 100;
+}
+
+.btn-scroll-top:hover {
+  background-color: #555;
+}
+
+.very-berry-header-hero-wrapper {
+  background-image: url("../images/very-berry-hero-img.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.very-berry__header {
+  padding-top: 30px;
+}
+
+.very-berry__header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.very-berry__language {
+  border-color: #5F4A96;
+}
+
+.very-berry__switch-circle {
+  background-color: #5F4A96;
+}
+
+/* VERY_BERRY HERO */
+.very-berry__hero {
+  padding-top: 193px;
+  padding-bottom: 217px;
+}
+
+.very-berry__hero__content {
+  width: 100%;
+  max-width: 1024px;
+  margin-right: auto;
+}
+
+.very-berry__hero__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 109px;
+  letter-spacing: -0.04em;
+  color: #000000;
+}
+
+.very-berry__hero__txt {
+  margin: 0;
+  width: 100%;
+  max-width: 700px;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+.very-berry__hero__link {
+  display: inline-block;
+  margin-right: 24px;
+  padding: 16px 40px 18px 40px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  background-color: #5F4A96;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.very-berry__hero__download-presentation-link {
+  display: inline-block;
+  padding: 16px 32px 18px 72px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.02em;
+  color: #5F4A96;
+  background-color: #FFFFFF;
+  border: 1px solid #5F4A96;
+  border-radius: 8px;
+  text-decoration: none;
+  background-image: url("../images/icon-download.svg");
+  background-repeat: no-repeat;
+  background-position: left 32px top 18px;
+}
+
+/* VERY_BERRY ABOUT US */
+.very-berry__about-us {
+  padding-top: 186px;
+  padding-bottom: 320px;
+  background-color: #5F4A96;
+  color: #FFFFFF;
+}
+
+/* VERY_BERRY EXPORT */
+.very-berry__export-bluberry {
+  padding: 382px 128px 24px 128px;
+  margin-bottom: 32px;
+  background-image: url("../images/export-bluberry.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.very-berry__export-bluberry__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 250px;
+  line-height: 342px;
+  text-align: center;
+  letter-spacing: -0.08em;
+  color: #FFFFFF;
+  text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+}
+
+.very-berry__export-routes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  margin: 0;
+  list-style: none;
+}
+
+.very-berry__export-routes-item {
+  display: flex;
+  align-items: center;
+}
+
+.very-berry__exporting-country {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+.very-berry__exporting-country::after {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-image: url("../images/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  display: inline-block;
+}
+
+.very-berry__importing-country {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+/* VERY_BERRY PRODUCT-OVERVIEW */
+.very-berry__product-overview {
+  position: relative;
+  padding: 250px 0;
+
+}
+
+.very-berry__product-overview::before {
+  width: 650px;
+  height: 306px;
+  content: "";
+  position: absolute;
+  top: 530px;
+  left: calc(50% - 1000px);
+  background-image: url("../images/product-overview-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.very-berry__product-overview__title {
+  margin-top: 0;
+  margin-bottom: 250px;
+  font-weight: 300;
+  font-size: 240px;
+  line-height: 240px;
+  text-align: center;
+  letter-spacing: -0.05em;
+}
+
+.very-berry__product-overview__dl {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.very-berry__product-overview__dt-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #C3C3CB;
+  padding: 10px 0px;
+}
+
+.very-berry__product-overview__dt-wrapper:not(:last-child) {
+  margin-bottom: 120px;
+}
+
+.very-berry__product-overview__dt-inner-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.very-berry__product-overview__dt {
+  width: 100%;
+  max-width: 68px;
+  margin-right: 270px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.very-berry__product-overview__dd {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 109px;
+  display: flex;
+  align-items: flex-end;
+  text-transform: uppercase;
+}
+
+.very-berry__product-overview__desc {
+  width: 100%;
+  max-width: 373px;
+  margin: 0;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+
+/* VERY_BERRY ABOUT-BLUBERRIES */
+.very-berry__about-bluberries__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.very-berry__about-bluberries__title {
+  width: 100%;
+  max-width: 806px;
+  margin-top: 0;
+  margin-bottom: 120px;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 110%;
+  letter-spacing: -0.03em;
+}
+
+.very-berry__about-bluberries__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.very-berry__about-bluberries__card-img {
+  width: 1400px;
+  height: 756px;
+  margin-bottom: 24px;
+}
+
+.very-berry__about-bluberries__card-txt {
+  width: 100%;
+  max-width: 1162px;
+  margin: 0;
+}
+
+.very-berry__about-bluberries__images-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 30px 30px;
+  grid-template-areas:
+    ". . ."
+    ". . .";
+  padding: 0;
+  margin: 0px;
+  list-style: none;
+}
+
+.very-berry__about-bluberries__images-img {
+  width: 447px;
+  height: 300px;
+}
+
+
 @media only screen and (max-width: 744px) {
   .container {
     max-width: 744px;
@@ -497,6 +820,259 @@ main {
   .site-footer {
     padding: 0 0 48px 0;
   }
+
+  /* VERY_BERRY HEADER TABLET*/
+  .very-berry-header-hero-wrapper {
+    background-image: url("../images/very-berry-hero-img-tablet.png");
+    background-size: contain;
+  }
+
+  .very-berry__header {
+    padding-top: 30px;
+  }
+
+  .very-berry__header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* VERY_BERRY HERO */
+  .very-berry__hero {
+    padding-top: 120px;
+    padding-bottom: 335px;
+  }
+
+  .very-berry__hero__content {
+    width: 100%;
+    max-width: unset;
+    margin-right: 0;
+  }
+
+  .very-berry__hero__title {
+    padding-right: 20px;
+    font-size: 70px;
+    line-height: 96px;
+    text-align: left;
+  }
+
+  .very-berry__hero__txt {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  /* VERY_BERRY ABOUT US */
+  .very-berry__about-us {
+    padding-top: 186px;
+    padding-bottom: 320px;
+    background-color: #5F4A96;
+    color: #FFFFFF;
+  }
+
+  /* VERY_BERRY EXPORT */
+  .very-berry__export-bluberry {
+    padding: 382px 128px 24px 128px;
+    margin-bottom: 32px;
+    background-image: url("../images/export-bluberry.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .very-berry__export-bluberry__title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 250px;
+    line-height: 342px;
+    text-align: center;
+    letter-spacing: -0.08em;
+    color: #FFFFFF;
+    text-shadow: 0px 10px 80px rgba(0, 0, 0, 0.5);
+  }
+
+  .very-berry__export-routes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    margin: 0;
+    list-style: none;
+  }
+
+  .very-berry__export-routes-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .very-berry__exporting-country {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .very-berry__exporting-country::after {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    background-image: url("../images/icon-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: "";
+    display: inline-block;
+  }
+
+  .very-berry__importing-country {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  /* VERY_BERRY PRODUCT-OVERVIEW */
+  .very-berry__product-overview {
+    position: relative;
+    padding: 250px 0;
+
+  }
+
+  .very-berry__product-overview::before {
+    width: 650px;
+    height: 306px;
+    content: "";
+    position: absolute;
+    top: 530px;
+    left: calc(50% - 1000px);
+    background-image: url("../images/product-overview-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .very-berry__product-overview__title {
+    margin-top: 0;
+    margin-bottom: 250px;
+    font-weight: 300;
+    font-size: 240px;
+    line-height: 240px;
+    text-align: center;
+    letter-spacing: -0.05em;
+  }
+
+  .very-berry__product-overview__dl {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .very-berry__product-overview__dt-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #C3C3CB;
+    padding: 10px 0px;
+  }
+
+  .very-berry__product-overview__dt-wrapper:not(:last-child) {
+    margin-bottom: 120px;
+  }
+
+  .very-berry__product-overview__dt-inner-wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .very-berry__product-overview__dt {
+    width: 100%;
+    max-width: 68px;
+    margin-right: 270px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .very-berry__product-overview__dd {
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 109px;
+    display: flex;
+    align-items: flex-end;
+    text-transform: uppercase;
+  }
+
+  .very-berry__product-overview__desc {
+    width: 100%;
+    max-width: 373px;
+    margin: 0;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 160%;
+    align-self: flex-end;
+    justify-self: flex-end;
+  }
+
+  /* VERY_BERRY ABOUT-BLUBERRIES */
+  .very-berry__about-bluberries__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  .very-berry__about-bluberries__title {
+    width: 100%;
+    max-width: 806px;
+    margin-top: 0;
+    margin-bottom: 120px;
+    font-weight: 500;
+    font-size: 120px;
+    line-height: 110%;
+    letter-spacing: -0.03em;
+  }
+
+  .very-berry__about-bluberries__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 120px;
+  }
+
+  .very-berry__about-bluberries__card-img {
+    width: 1400px;
+    height: 756px;
+    margin-bottom: 24px;
+  }
+
+  .very-berry__about-bluberries__card-txt {
+    width: 100%;
+    max-width: 1162px;
+    margin: 0;
+  }
+
+  .very-berry__about-bluberries__images-list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px 30px;
+    grid-template-areas:
+      ". . ."
+      ". . .";
+    padding: 0;
+    margin: 0px;
+    list-style: none;
+  }
+
+  .very-berry__about-bluberries__images-img {
+    width: 447px;
+    height: 300px;
+  }
+
+
 }
 
 
@@ -622,5 +1198,102 @@ main {
 
   .socials__item:not(:last-child) {
     margin-right: 40px;
+  }
+
+
+  /* VERY_BERRY HEADER MOBILE*/
+  .very-berry-header-hero-wrapper {
+    background-image: url("../images/very-berry-hero-img-mobile.png");
+    background-size: contain;
+  }
+
+  .very-berry__header {
+    padding-top: 30px;
+  }
+
+  .very-berry__header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .produced-by-logo {
+    display: none;
+  }
+
+  .very-berry__logo {
+    width: 132px;
+    height: 33px;
+  }
+
+  .very-berry__language {
+    width: 92px;
+    height: 37px;
+  }
+
+  .very-berry__switch-circle {
+    width: 42px;
+    height: 29px;
+  }
+
+  /* VERY_BERRY HERO */
+  .very-berry__hero {
+    padding-top: 64px;
+    padding-bottom: 385px;
+  }
+
+  .very-berry__hero__content {
+    width: 100%;
+    max-width: unset;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .very-berry__hero__title {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: -.05em;
+  }
+
+  .very-berry__hero__txt {
+    width: 100%;
+    max-width: unset;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+  }
+
+  .very-berry__hero__links-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .very-berry__hero__link {
+    padding: 12px 24px;
+    font-weight: 600;
+    font-size: 20px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .very-berry__hero__download-presentation-link {
+    display: inline-block;
+    padding: 12px 24px 12px 58px;
+    font-size: 16px;
+    line-height: 22px;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: left 24px top 14px;
   }
 }

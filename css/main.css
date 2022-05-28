@@ -1086,9 +1086,8 @@ main {
   /* INDEX HEADER MOBILE*/
   .header-hero-wrapper {
     background-image: url("../images/hero-bg-mobile.png");
-    background-size: cover;
   }
-
+  
 
   .site-header {
     padding-top: 20px;
@@ -1206,7 +1205,7 @@ main {
   /* VERY_BERRY HEADER MOBILE*/
   .very-berry-header-hero-wrapper {
     background-image: url("../images/very-berry-hero-img-mobile.png");
-    background-size: contain;
+    background-size: cover;
   }
 
   .very-berry__header {

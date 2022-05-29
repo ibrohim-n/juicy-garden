@@ -857,6 +857,11 @@ main {
     padding: 0 0 48px 0;
   }
 
+  .btn-scroll-top {
+    bottom: 100px;
+    right: 150px;
+  }
+
   /* VERY_BERRY HEADER TABLET*/
   .very-berry-header-hero-wrapper {
     background-image: url("../images/very-berry-hero-img-tablet.png");
@@ -1189,6 +1194,11 @@ main {
   }
 
   /* VERY_BERRY HEADER MOBILE*/
+  .btn-scroll-top {
+    bottom: 100px;
+    right: 100px;
+  }
+
   .very-berry-header-hero-wrapper {
     background-image: url("../images/very-berry-hero-img-mobile.png");
     background-size: cover;

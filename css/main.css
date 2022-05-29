@@ -119,7 +119,7 @@ main {
   margin-left: auto;
 }
 
-/* INDEX HEADER */
+/* INDEX HEADER DESKTOP*/
 .header-hero-wrapper {
   background-image: url("../images/hero-bg.png");
   background-repeat: no-repeat;
@@ -171,8 +171,6 @@ main {
   outline: none;
 }
 
-
-
 .language__chkbx:checked~.switch-circle {
   transform: translateX(45px);
 }
@@ -196,7 +194,7 @@ main {
   transition: 0.3s ease transform;
 }
 
-/* INDEX HERO */
+/* INDEX HERO DESKTOP*/
 .hero {
   padding: 128px 0 155px 0;
   background-image: url("../images/strawberry-bg.png"), url("../images/tomato-bg.png");
@@ -279,8 +277,7 @@ main {
   background-image: url("../images/icon-external-link-red.svg");
 }
 
-/* INDEX CONTACT */
-
+/* INDEX CONTACT DESKTOP*/
 .contact {
   padding-top: 120px;
   padding-bottom: 64px;
@@ -418,7 +415,7 @@ main {
   padding-right: 10px;
 }
 
-/* INDEX FOOTER */
+/* INDEX FOOTER DESKTOP*/
 .site-footer {
   padding: 48px 0;
 }
@@ -466,7 +463,7 @@ main {
 
 
 
-/* VERY_BERRY HEADER */
+/* VERY_BERRY HEADER DESKTOP*/
 .btn-scroll-top {
   width: 56px;
   height: 56px;
@@ -511,7 +508,7 @@ main {
   background-color: #5F4A96;
 }
 
-/* VERY_BERRY HERO */
+/* VERY_BERRY HERO DESKTOP*/
 .very-berry__hero {
   padding-top: 193px;
   padding-bottom: 217px;
@@ -572,7 +569,7 @@ main {
   background-position: left 32px top 18px;
 }
 
-/* VERY_BERRY ABOUT US */
+/* VERY_BERRY ABOUT US DESKTOP*/
 .very-berry__about-us {
   padding-top: 186px;
   padding-bottom: 320px;
@@ -580,7 +577,7 @@ main {
   color: #FFFFFF;
 }
 
-/* VERY_BERRY EXPORT */
+/* VERY_BERRY EXPORT DESKTOP*/
 .very-berry__export-bluberry {
   padding: 382px 128px 24px 128px;
   margin-bottom: 32px;
@@ -641,7 +638,7 @@ main {
   line-height: 41px;
 }
 
-/* VERY_BERRY PRODUCT-OVERVIEW */
+/* VERY_BERRY PRODUCT-OVERVIEW DESKTOP*/
 .very-berry__product-overview {
   position: relative;
   padding: 250px 0;
@@ -729,7 +726,7 @@ main {
   justify-self: flex-end;
 }
 
-/* VERY_BERRY ABOUT-BLUBERRIES */
+/* VERY_BERRY ABOUT-BLUBERRIES DESKTOP*/
 .very-berry__about-bluberries__container {
   position: relative;
   display: flex;
@@ -798,6 +795,164 @@ main {
 .very-berry__about-bluberries__images-img {
   width: 447px;
   height: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* VERY_BERRY DELIVERY DESKTOP */
+.very-berry__delivery {
+  padding: 103px 0 461px 0;
+  background-color: #FFFFFF;
+  background-image: url("../images/delivery-bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 800px 400px;
+}
+
+.very-berry__delivery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.very-berry__delivery__title {
+  margin: 0;
+  margin-bottom: 70px;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+}
+
+.very-berry__delivery__txt-wrapper {
+  width: 100%;
+  max-width: 1233px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.very-berry__delivery__txt {
+  width: 100%;
+  max-width: 459px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: left;
+}
+
+/* VERY_BERRY ADVANTAGES DESKTOP */
+.very-berry__advantages {
+  padding: 474px 0 200px 0;
+  background-color: #5F4A96;
+  background-image: url("../images/advantages-bg.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 800px 400px;
+}
+
+.very-berry__advantages__container {}
+
+.very-berry__advantages__cards {
+  width: 100%;
+  max-width: 1380px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.very-berry__advantages__card {
+  width: 100%;
+  max-width: 765px;
+}
+
+.very-berry__advantages__card:not(:last-child) {
+  margin-bottom: 150px;
+}
+
+.very-berry__advantages__card:nth-child(even) {
+  align-self: flex-end;
+}
+
+.very-berry__advantages__subtitle {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+}
+
+.very-berry__advantages__desc-wrapper {
+  display: flex;
+  align-items: stretch;
+  background-color: #FFFFFF;
+  box-shadow: 10px 10px 0px 0px #B46BFD, 15px 15px 0px 0px #FD976B;
+  -webkit-box-shadow: 10px 10px 0px 0px #B46BFD, 20px 20px 0px 0px #FD976B;
+  -moz-box-shadow: 10px 10px 0px 0px #B46BFD, 15px 15px 0px 0px #FD976B;
+  padding: 40px;
+}
+
+.very-berry__advantages__desc-wrapper--second {
+  box-shadow: 10px 10px 0px 0px #FD6B97, 15px 15px 0px 0px #E0FD6B;
+  -webkit-box-shadow: 10px 10px 0px 0px #FD6B97, 20px 20px 0px 0px #E0FD6B;
+  -moz-box-shadow: 10px 10px 0px 0px #FD6B97, 15px 15px 0px 0px #E0FD6B;
+}
+
+
+.very-berry__advantages__decoration {
+  width: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.very-berry__advantages__decoration-shape {
+  width: 15px;
+  height: 15px;
+  display: block;
+  border-radius: 50%;
+  background-color: #000000;
+  flex-shrink: 0;
+}
+
+.very-berry__advantages__decoration-shape--square {
+  border-radius: 0;
+  transform: rotate(45deg);
+}
+
+.very-berry__advantages__decoration-line {
+  width: 3px;
+  height: 100%;
+  display: block;
+  background-color: black;
+}
+
+
+.very-berry__advantages__desc {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  color: #000000;
 }
 
 /* TABLET */
@@ -1072,6 +1227,58 @@ main {
   .very-berry__about-bluberries__images-img {
     width: 324px;
     height: 217px;
+  }
+
+  /* VERY_BERRY DELIVERY TABLET */
+  .very-berry__delivery {
+    padding: 80px 0 444px 0;
+    background-image: url("../images/delivery-bg-tablet.png");
+    background-size: 744px 372px;
+  }
+
+  .very-berry__delivery__title {
+    margin-bottom: 72px;
+    font-size: 60px;
+  }
+
+  .very-berry__delivery__txt-wrapper {
+    max-width: initial;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: initial;
+  }
+
+  .very-berry__delivery__txt:nth-child(2n) {
+    align-self: flex-end;
+  }
+
+  .very-berry__delivery__txt:not(:last-child) {
+    margin-bottom: 72px;
+  }
+
+
+  /* VERY_BERRY ADVANTAGES TABLET */
+  .very-berry__advantages {
+    padding: 472px 0 150px 0;
+    background-image: url("../images/advantages-bg-tablet.png");
+    background-size: 744px 372px;
+  }
+
+  .very-berry__advantages__cards {
+    max-width: initial;
+    align-items: center;
+  }
+
+  .very-berry__advantages__card {
+    max-width: unset;
+  }
+
+  .very-berry__advantages__card:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  .very-berry__advantages__card:nth-child(even) {
+    align-self: unset;
   }
 }
 
@@ -1494,5 +1701,74 @@ main {
   .very-berry__about-bluberries__images-img {
     width: 343px;
     height: 230px;
+  }
+
+  /* VERY_BERRY DELIVERY MOBILE */
+  .very-berry__delivery {
+    padding: 64px 0 243px 0;
+    background-image: url("../images/delivery-bg-mobile.png");
+    background-size: 375px 187px;
+  }
+
+  .very-berry__delivery__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .very-berry__delivery__txt-wrapper {
+    max-width: initial;
+    align-items: center;
+    justify-content: initial;
+  }
+
+  .very-berry__delivery__txt {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .very-berry__delivery__txt:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .very-berry__delivery__txt:nth-child(2n) {
+    align-self: initial;
+  }
+
+  /* VERY_BERRY ADVANTAGES MOBILE */
+  .very-berry__advantages {
+    padding: 243px 0 200px 0;
+    background-image: url("../images/advantages-bg-mobile.png");
+    background-size: 375px 187px;
+  }
+
+  .very-berry__advantages__cards {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .very-berry__advantages__card {
+    width: 100%;
+    padding-right: 19px;
+    /* max-width: 323px; */
+  }
+
+  .very-berry__advantages__subtitle {
+    font-size: 50px;
+    line-height: 110%;
+  }
+
+  .very-berry__advantages__desc-wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    padding: 40px;
+  }
+
+  .very-berry__advantages__desc {
+    display: flex;
+    align-items: stretch;
+    font-size: 14px;
+    line-height: 23px;
   }
 }

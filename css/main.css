@@ -965,6 +965,13 @@ main {
     background-image: url("../images/product-overview-bg-tablet.png");
   }
 
+  .very-berry__product-overview::after {
+    width: 491px;
+    height: 232px;
+    top: 430px;
+    left: calc(50% - 520px);
+  }
+
   .very-berry__product-overview__title {
     margin-bottom: 200px;
     font-size: 120px;
@@ -1358,8 +1365,8 @@ main {
     content: "";
     width: 297px;
     height: 140px;
-    top: 200px;
-    left: calc(50% - 100px);
+    top: 220px;
+    left: calc(50% - 295px);
     background-color: transparent;
     position: absolute;
   }
@@ -1428,12 +1435,21 @@ main {
   }
 
   /* VERY_BERRY ABOUT-BLUBERRIES MOBILE*/
+  .very-berry__about-bluberries {
+    /* overflow-x: hidden; */
+    position: relative;
+  }
+
+
   .very-berry__about-bluberries__container::after {
+    position: absolute;
     width: 249px;
     height: 166px;
     top: -90px;
     right: calc(50% - 280px);
     background-image: url("../images/about-bluberry-bg-mobile.png");
+    background-position: center;
+    display: none;
   }
 
   .very-berry__about-bluberries__title {

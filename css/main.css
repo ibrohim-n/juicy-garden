@@ -1337,10 +1337,10 @@ main {
     word-break: break-all;
   }
 
-  /* VERY_BERRY PRODUCT-OVERVIEW */
+  /* VERY_BERRY PRODUCT-OVERVIEW MOBILE*/
   .very-berry__product-overview {
     position: relative;
-    padding: 163px 0 253px 0;
+    padding: 163px 0 100px 0;
     z-index: 10;
   }
 

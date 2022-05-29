@@ -84,6 +84,7 @@ body {
   line-height: 29px;
   background-color: rgba(255, 255, 255, 1);
   color: rgba(0, 0, 0, 0.7);
+  overflow-x: hidden;
 }
 
 img {
@@ -730,10 +731,24 @@ main {
 
 /* VERY_BERRY ABOUT-BLUBERRIES */
 .very-berry__about-bluberries__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+.very-berry__about-bluberries__container::after {
+  width: 540px;
+  height: 360px;
+  position: absolute;
+  top: 50px;
+  right: calc(50% - 1080px);
+  background-image: url("../images/about-bluberry-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
 }
 
 .very-berry__about-bluberries__title {
@@ -837,7 +852,7 @@ main {
     padding-bottom: 65px;
   }
 
-  /* INDEX FOOTER */
+  /* INDEX FOOTER TABLET*/
   .site-footer {
     padding: 0 0 48px 0;
   }
@@ -991,62 +1006,60 @@ main {
     max-width: unset;
   }
 
-  /* VERY_BERRY ABOUT-BLUBERRIES */
-  .very-berry__about-bluberries__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  /* VERY_BERRY ABOUT-BLUBERRIES TABLET*/
+  .very-berry__about-bluberries__container::after {
+    width: 440px;
+    height: 260px;
+    top: -150px;
+    right: calc(50% - 500px);
+    background-image: url("../images/about-bluberry-bg.png");
   }
 
-
   .very-berry__about-bluberries__title {
-    width: 100%;
-    max-width: 806px;
-    margin-top: 0;
+    max-width: 680px;
     margin-bottom: 120px;
-    font-weight: 500;
-    font-size: 120px;
-    line-height: 110%;
-    letter-spacing: -0.03em;
+    font-size: 90px;
   }
 
   .very-berry__about-bluberries__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 64px;
   }
 
   .very-berry__about-bluberries__card-img {
-    width: 1400px;
-    height: 756px;
+    width: 680px;
+    height: 368px;
     margin-bottom: 24px;
   }
 
   .very-berry__about-bluberries__card-txt {
     width: 100%;
-    max-width: 1162px;
+    max-width: 680px;
     margin: 0;
+    font-size: 18px;
+    line-height: 170%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.8);
   }
 
   .very-berry__about-bluberries__images-list {
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 32px 30px;
     grid-template-areas:
-      ". . ."
-      ". . .";
+      ". ."
+      ". ."
+      ". .";
     padding: 0;
     margin: 0px;
     list-style: none;
   }
 
   .very-berry__about-bluberries__images-img {
-    width: 447px;
-    height: 300px;
+    width: 324px;
+    height: 217px;
   }
 }
 
@@ -1054,8 +1067,8 @@ main {
 @media only screen and (max-width: 576px) {
   .container {
     max-width: 576px;
-    padding-right: 24px;
-    padding-left: 24px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   /* INDEX HEADER MOBILE*/
@@ -1174,7 +1187,6 @@ main {
   .socials__item:not(:last-child) {
     margin-right: 40px;
   }
-
 
   /* VERY_BERRY HEADER MOBILE*/
   .very-berry-header-hero-wrapper {
@@ -1405,61 +1417,56 @@ main {
     letter-spacing: -0.02em;
   }
 
-  /* VERY_BERRY ABOUT-BLUBERRIES */
-  .very-berry__about-bluberries__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  /* VERY_BERRY ABOUT-BLUBERRIES MOBILE*/
+  .very-berry__about-bluberries__container::after {
+    width: 249px;
+    height: 166px;
+    top: -90px;
+    right: calc(50% - 280px);
+    background-image: url("../images/about-bluberry-bg-mobile.png");
   }
-
 
   .very-berry__about-bluberries__title {
     width: 100%;
-    max-width: 806px;
-    margin-top: 0;
-    margin-bottom: 120px;
-    font-weight: 500;
-    font-size: 120px;
+    max-width: 342px;
+    margin-bottom: 48px;
+    font-size: 50px;
     line-height: 110%;
     letter-spacing: -0.03em;
   }
 
   .very-berry__about-bluberries__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 120px;
+    margin-bottom: 40px;
   }
 
   .very-berry__about-bluberries__card-img {
-    width: 1400px;
-    height: 756px;
-    margin-bottom: 24px;
+    width: 342px;
+    height: 184px;
+    margin-bottom: 16px;
   }
 
   .very-berry__about-bluberries__card-txt {
     width: 100%;
-    max-width: 1162px;
+    max-width: 343px;
     margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    letter-spacing: -0.02em;
   }
 
   .very-berry__about-bluberries__images-list {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px 30px;
-    grid-template-areas:
-      ". . ."
-      ". . .";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 0;
     margin: 0px;
     list-style: none;
   }
 
   .very-berry__about-bluberries__images-img {
-    width: 447px;
-    height: 300px;
+    width: 343px;
+    height: 230px;
   }
 }

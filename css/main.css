@@ -275,6 +275,7 @@ main {
 
 .external-site__external-link--red {
   background-image: url("../images/icon-external-link-red.svg");
+  background-color: #FFF2F2;
 }
 
 /* INDEX CONTACT DESKTOP*/
@@ -803,19 +804,6 @@ main {
   height: 300px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* VERY_BERRY DELIVERY DESKTOP */
 .very-berry__delivery {
   padding: 103px 0 461px 0;
@@ -918,7 +906,6 @@ main {
   -webkit-box-shadow: 10px 10px 0px 0px #FD6B97, 20px 20px 0px 0px #E0FD6B;
   -moz-box-shadow: 10px 10px 0px 0px #FD6B97, 15px 15px 0px 0px #E0FD6B;
 }
-
 
 .very-berry__advantages__decoration {
   width: 25px;
@@ -1100,6 +1087,41 @@ main {
 .very-berry__contact__address-txt {
   font-style: normal;
   padding-right: 10px;
+}
+
+/* VERY_BERRY FOOTER DESKTOP */
+.very-berry__footer {
+  padding: 57px 0;
+  background-color: #5F4A96;
+}
+
+.very-berry__footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.very-berry__footer__main-logo {
+  width: 172px;
+  height: 44px;
+}
+
+.very-berry__footer__socials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.very-berry__footer__socials-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.very-berry__footer__produced-by-logo {
+  width: 164px;
+  height: 62px;
 }
 
 /* TABLET */
@@ -1442,6 +1464,20 @@ main {
     background-position: left calc(50% - 350px) bottom -40px;
   }
 
+  /* VERY_BERRY FOOTER TABLET */
+  .very-berry__footer {
+    padding: 55px 0;
+  }
+
+  .very-berry__footer__main-logo {
+    width: 150px;
+    height: 38px;
+  }
+
+  .very-berry__footer__produced-by-logo {
+    width: 140px;
+    height: 53px;
+  }
 }
 
 /* MOBILE */
@@ -1806,7 +1842,7 @@ main {
   /* VERY_BERRY ABOUT-BLUBERRIES MOBILE*/
   .very-berry__about-bluberries {
     position: relative;
-    
+
   }
 
   .very-berry__about-bluberries::before {
@@ -1949,6 +1985,7 @@ main {
   }
 
   .very-berry__contact__title {
+    font-size: 70px;
     line-height: 96px;
   }
 
@@ -1969,7 +2006,6 @@ main {
     font-size: 18px;
     line-height: 25px;
   }
-
 
   .very-berry__contact__email-wrapper {
     max-width: unset;
@@ -2001,5 +2037,39 @@ main {
   .very-berry__contact__address-txt {
     font-style: normal;
     padding-right: 10px;
+  }
+
+  /* VERY_BERRY FOOTER MOBILE */
+  .very-berry__footer {
+    padding: 48px 0;
+  }
+
+  .very-berry__footer__container {
+    flex-wrap: wrap;
+    justify-content: initial;
+  }
+
+  .very-berry__footer__main-logo {
+    width: 136px;
+    height: 35px;
+    margin-right: auto;
+  }
+
+  .very-berry__footer__socials {
+    max-width: 260px;
+    margin-top: 40px;
+    padding: 0px 40px;
+    order: 3;
+    margin: 40px auto 0 auto;
+  }
+
+  .very-berry__footer__socials-item:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .very-berry__footer__produced-by-logo {
+    width: 164px;
+    height: 62px;
+    order: 2;
   }
 }

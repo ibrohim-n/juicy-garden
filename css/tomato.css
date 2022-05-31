@@ -512,13 +512,13 @@
   }
 
   .tomato__about-us__card-img {
-    width: 343px;
+    width: 100%;
     height: 233px;
     margin-bottom: 16px;
   }
 
   .tomato__about-us__card--small .tomato__about-us__card-img {
-    width: 343px;
+    width: 100%;
     height: 233px;
   }
 

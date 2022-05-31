@@ -107,12 +107,126 @@
   color: #000000;
 }
 
+/* TOMATO ABOUT-US DESKTOP */
+.tomato__about-us {
+  padding-bottom: 200px;
+}
+
+.tomato__about-us__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tomato__about-us__title {
+  margin-top: 0;
+  margin-bottom: 100px;
+  font-weight: 500;
+  font-size: 120px;
+  line-height: 164px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #000000;
+  align-self: center;
+}
+
+.tomato__about-us__card {
+  width: 100%;
+  max-width: 804px;
+}
+
+.tomato__about-us__card:nth-of-type(even) {
+  margin-left: 30px;
+  margin-top: 80px;
+  align-self: flex-end;
+}
+
+.tomato__about-us__card::before {
+  position: absolute;
+  top: 550px;
+  right: 200px;
+  width: 326px;
+  height: 317px;
+  background-image: url("../images/decoration-arrow1.png");
+  background-repeat: no-repeat;
+  background-size: 326px 317px;
+  content: "";
+}
+
+.tomato__about-us__card::after {
+  position: absolute;
+  bottom: 200px;
+  left: 400px;
+  width: 348px;
+  height: 317px;
+  background-image: url("../images/decoration-arrow2.png");
+  background-repeat: no-repeat;
+  background-size: 348px 317px;
+  content: "";
+}
+
+.tomato__about-us__card--small {
+  width: 100%;
+  max-width: 566px;
+}
+
+.tomato__about-us__card-img {
+  width: 804px;
+  height: 550px;
+  margin-bottom: 24px;
+}
+
+.tomato__about-us__card--small .tomato__about-us__card-img {
+  width: 566px;
+  height: 387px;
+}
+
+.tomato__about-us__card-txt {
+  margin: 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: -0.03em;
+  color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* TOMATO GALLERY DESKTOP */
+.tomato__gallery-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tomato__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tomato__img {
+  display: block;
+  width: unset;
+  height: unset;
+  margin-bottom: 30px;
+}
 
 @media only screen and (max-width: 744px) {
+
   /* TOMATO TABLET*/
   .tomato {
     background-image: url("../images/tomato-body-bg-tablet.png");
   }
+
   /*TOMATO HEADER TABLET  */
   .tomato__logo {
     width: 140px;
@@ -153,14 +267,109 @@
     background-image: url("../images/taste-bg-tablet.png");
     background-position: left calc(50% - 280px) bottom 150px;
   }
-  
+
   .tomato__taste__title {
     font-size: 100px;
     line-height: 110%;
   }
+
+  /* TOMATO ABOUT-US TABLET */
+  .tomato__about-us {
+    padding-bottom: 264px;
+  }
+
+  .tomato__about-us__card {
+    width: 100%;
+    max-width: 502px;
+  }
+
+  .tomato__about-us__card:nth-of-type(even) {
+    margin-left: 0;
+  }
+
+  .tomato__about-us__card::before {
+    position: absolute;
+    top: 600px;
+    right: 35px;
+    width: 152px;
+    height: 147px;
+    background-image: url("../images/decoration-arrow1.png");
+    background-repeat: no-repeat;
+    background-size: 152px 147px;
+    content: "";
+  }
+
+  .tomato__about-us__card::after {
+    position: absolute;
+    bottom: 330px;
+    left: 30px;
+    width: 142px;
+    height: 129px;
+    background-image: url("../images/decoration-arrow2.png");
+    background-repeat: no-repeat;
+    background-size: 142px 129px;
+    content: "";
+  }
+
+  .tomato__about-us__card--small {
+    width: 100%;
+    max-width: 502px;
+  }
+
+  .tomato__about-us__card-img {
+    width: 502px;
+    height: 343px;
+    margin-bottom: 24px;
+  }
+
+  .tomato__about-us__card--small .tomato__about-us__card-img {
+    width: 502px;
+    height: 343px;
+  }
+
+  .tomato__about-us__card-txt {
+    font-size: 18px;
+  }
+
+  /* TOMATO GALLERY DESKTOP */
+  .tomato__gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tomato__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tomato__img {
+    display: block;
+    width: unset;
+    height: unset;
+    margin-bottom: 30px;
+  }
+
+  .tomato__col3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tomato__col3 > picture:nth-child(1) img {
+    margin-top: -230px;
+  }
+
+  .tomato__col3 > picture:nth-child(3) img {
+    margin-top: -150px;
+  }
 }
 
+
+
 @media only screen and (max-width: 576px) {
+
   /* TOMATO MOBILE*/
   .tomato {
     background-image: url("../images/tomato-body-bg-mobile.png");
@@ -255,9 +464,99 @@
     background-image: url("../images/taste-bg-mobile.png");
     background-position: left calc(50% - 160px) bottom 40px;
   }
-  
+
   .tomato__taste__title {
     font-size: 54px;
     line-height: 120%;
+  }
+
+  /* TOMATO ABOUT-US MOBILE */
+  .tomato__about-us {
+    padding-bottom: 150px;
+  }
+
+  .tomato__about-us__title {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  .tomato__about-us__card {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tomato__about-us__card::before {
+    position: absolute;
+    top: 600px;
+    right: calc(50% - 45px);
+    width: 94px;
+    height: 91px;
+    background-image: url("../images/decoration-arrow1.png");
+    background-repeat: no-repeat;
+    background-size: 93px 91px;
+    content: "";
+  }
+
+  .tomato__about-us__card::after {
+    display: none;
+  }
+
+  .tomato__about-us__card:nth-of-type(even) {
+    margin-left: 0;
+    margin-top: 190px;
+  }
+
+  .tomato__about-us__card--small {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tomato__about-us__card-img {
+    width: 343px;
+    height: 233px;
+    margin-bottom: 16px;
+  }
+
+  .tomato__about-us__card--small .tomato__about-us__card-img {
+    width: 343px;
+    height: 233px;
+  }
+
+  .tomato__about-us__card-txt {
+    font-size: 16px;
+  }
+
+  /* TOMATO GALLERY MOBILE */
+  .tomato__gallery-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tomato__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tomato__img {
+    display: block;
+    width: unset;
+    height: unset;
+    margin-bottom: 8px;
+  }
+
+  .tomato__col3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tomato__col3 > picture:nth-child(1) img {
+    margin-top: -105px;
+  }
+
+  .tomato__col3 > picture:nth-child(3) img {
+    margin-top: -65px;
   }
 }

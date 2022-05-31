@@ -202,6 +202,33 @@
 
 
 /* TOMATO GALLERY DESKTOP */
+.tomato__gallery__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 200px;
+  font-weight: 800;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.tomato__gallery__title::after {
+  position: absolute;
+  top: 130px;
+  right: 50px;
+  width: 144px;
+  height: 166px;
+  background-image: url("../images/gallery-deco.svg");
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+
+
 .tomato__gallery-wrapper {
   display: flex;
   justify-content: space-between;
@@ -331,7 +358,20 @@
     font-size: 18px;
   }
 
-  /* TOMATO GALLERY DESKTOP */
+  /* TOMATO GALLERY TABLET */
+  .tomato__gallery__title {
+    margin-bottom: 120px;
+    font-size: 80px;
+  }
+  
+  .tomato__gallery__title::after {
+    width: 144px;
+    height: 166px;
+    top: 170px;
+    right: 0;
+    background-size: contain;
+  }
+
   .tomato__gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -357,19 +397,16 @@
     justify-content: space-between;
   }
 
-  .tomato__col3 > picture:nth-child(1) img {
+  .tomato__col3>picture:nth-child(1) img {
     margin-top: -230px;
   }
 
-  .tomato__col3 > picture:nth-child(3) img {
+  .tomato__col3>picture:nth-child(3) img {
     margin-top: -150px;
   }
 }
 
-
-
 @media only screen and (max-width: 576px) {
-
   /* TOMATO MOBILE*/
   .tomato {
     background-image: url("../images/tomato-body-bg-mobile.png");
@@ -382,7 +419,6 @@
   }
 
   /* TOMATO HEADER MOBILE */
-
   .tomato__logo {
     width: 120px;
     height: 48px;
@@ -527,7 +563,7 @@
   }
 
   /* TOMATO GALLERY MOBILE */
-  .tomato__gallery-wrapper {
+  j .tomato__gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -552,11 +588,48 @@
     justify-content: space-between;
   }
 
-  .tomato__col3 > picture:nth-child(1) img {
+  .tomato__col3>picture:nth-child(1) img {
     margin-top: -105px;
   }
 
-  .tomato__col3 > picture:nth-child(3) img {
+  .tomato__col3>picture:nth-child(3) img {
     margin-top: -65px;
+  }
+
+  .tomato__gallery__title {
+    margin-bottom: 163px;
+    font-size: 49px;
+  }
+  
+  .tomato__gallery__title::after {
+    width: 60px;
+    height: 70px;
+    top: 170px;
+    right: 100px;
+    background-size: contain;
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }

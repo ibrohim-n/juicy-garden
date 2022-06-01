@@ -1041,7 +1041,7 @@
 
   .tomato__col3>picture:nth-child(3) img {
     margin-top: -65px;
-    margin-right: 180px;
+    margin-right: 178px;
   }
 
   /* TOMATO SWEET MOBILE */
@@ -1103,7 +1103,7 @@
     padding-bottom: 215px;
     background-image: url("../images/tomato-contact-bg-mobile.png");
     background-repeat: no-repeat;
-    background-position: left calc(50% - 100px) bottom 50px;
+    background-position: left calc(50% - 112px) bottom 50px;
     background-size: 188px 170px;
   }
 

@@ -1604,6 +1604,7 @@ main {
   }
 
   .contact__email-wrapper {
+    margin-bottom: 24px;
     padding: 24px 0px 26px 90px;
     background-size: 48px, 32px;
     background-position: top 24px left 16px, top 40px right 24px;

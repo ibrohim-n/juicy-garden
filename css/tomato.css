@@ -496,7 +496,7 @@
   height: 62px;
 }
 
-@media only screen and (min-width: 745px) and (max-width: 1200px){
+@media only screen and (min-width: 745px) and (max-width: 1200px) {
   .tomato__gallery-wrapper {
     display: flex;
     flex-direction: column;
@@ -521,7 +521,7 @@
   .tomato__taste__title {
     font-size: 100px;
     line-height: 100px;
-  } 
+  }
 
   .tomato__about-us__card--small {
     max-width: unset;
@@ -961,7 +961,7 @@
     content: "";
   }
 
-  
+
 
   .tomato__about-us__card::after {
     display: none;
@@ -1041,6 +1041,7 @@
 
   .tomato__col3>picture:nth-child(3) img {
     margin-top: -65px;
+    margin-right: 180px;
   }
 
   /* TOMATO SWEET MOBILE */
@@ -1205,14 +1206,14 @@
   }
 }
 
-@media only screen and (min-width: 376px) and (max-width: 576px){
+@media only screen and (min-width: 376px) and (max-width: 576px) {
   .tomato__about-us__card::before {
     bottom: 430px !important;
   }
 }
 
 
-@media only screen and (min-width: 500px) and (max-width: 743px){
+@media only screen and (min-width: 414px) and (max-width: 743px) {
 
   .tomato__col {
     width: 49%;
@@ -1237,7 +1238,7 @@
     flex-wrap: wrap;
   }
 
-  .tomato__col3 .tomato__picture{
+  .tomato__col3 .tomato__picture {
     width: 49%;
   }
 
@@ -1303,6 +1304,62 @@
   }
 
 }
+
+@media only screen and (max-width: 374px) {
+  .tomato__hero__download-presentation-link {
+    padding: 12px 12px 12px 36px;
+    background-position: left 10px center;
+  }
+
+  .tomato__about-us__card::before {
+    top: 700px;
+  }
+
+  .tomato__col {
+    width: 100%;
+  }
+
+  .tomato__picture {
+    width: 100%;
+    height: auto;
+  }
+
+  .tomato__img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .tomato__col3>picture:nth-child(1) img {
+    margin-top: 0;
+  }
+
+  .tomato__col3>picture:nth-child(3) img {
+    margin-top: 0;
+  }
+
+  .tomato__contact__tel-wrapper {
+    padding: 26px 26px 26px 80px;
+  }
+
+  .tomato__contact__email-wrapper {
+    padding: 26px 26px 26px 70px;
+  }
+
+  .tomato__footer__main-logo {
+    width: 40%;
+  }
+
+  .tomato__footer__produced-by-logo {
+    width: 130px;
+    height: auto;
+  }
+}
+
+
+
+
 
 @-webkit-keyframes rotate {
   0% {

@@ -196,16 +196,6 @@
   color: #000000;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* TOMATO GALLERY DESKTOP */
 .tomato__gallery {
   padding-bottom: 200px;
@@ -506,6 +496,98 @@
   height: 62px;
 }
 
+@media only screen and (min-width: 745px) and (max-width: 1200px){
+  .tomato__gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tomato__picture {
+    width: 100%;
+  }
+
+  .tomato__about-us__card {
+    max-width: unset;
+  }
+
+  .tomato__img {
+    width: 100%;
+  }
+
+  .tomato__taste {
+    background-position: calc(50% - 400px) bottom;
+  }
+
+  .tomato__taste__title {
+    font-size: 100px;
+    line-height: 100px;
+  } 
+
+  .tomato__about-us__card--small {
+    max-width: unset;
+  }
+
+  .tomato__about-us__card .tomato__about-us__card-img {
+    width: 100%;
+  }
+
+  .tomato__gallery__title {
+    font-size: 65px;
+  }
+
+  .tomato__gallery__title::after {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    top: 215px;
+    right: 100px;
+  }
+
+
+  .tomato__about-us__card-img {
+    width: 100%;
+  }
+
+  .tomato__sweet__title-wrapper {
+    padding-right: 0;
+  }
+
+  .tomato__sweet__title {
+    font-size: 35px;
+  }
+
+  .tomato__sweet__txt-wrapper {
+    padding-left: 50px;
+  }
+
+  .tomato__sweet__txt {
+    max-width: 556px;
+  }
+
+  .tomato__sweet__txt::after {
+    bottom: -60px;
+    right: 10px;
+  }
+
+  .tomato__about-us__card::after {
+    display: none;
+  }
+
+  .tomato__about-us__card:nth-of-type(even) {
+    margin-left: 0;
+    margin-top: 200px;
+  }
+
+  .tomato__about-us__card::before {
+    width: 150px;
+    height: 150px;
+    top: unset;
+    bottom: 590px;
+    background-size: contain;
+  }
+}
+
+
 
 @media only screen and (max-width: 744px) {
 
@@ -633,7 +715,7 @@
     width: 144px;
     height: 166px;
     top: 170px;
-    right: 0;
+    right: 50px;
     background-size: contain;
   }
 
@@ -726,6 +808,7 @@
     background-position: left calc(50% - 244px) bottom 30px;
     background-size: 256px 272px;
   }
+
   .tomato__contact__address-wrapper {
     background-position: top 34px left 24px, top 40px right 24px;
 
@@ -793,7 +876,7 @@
     margin-right: 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .tomato__hero__title {
@@ -868,7 +951,7 @@
 
   .tomato__about-us__card::before {
     position: absolute;
-    top: 600px;
+    /* top: 600px; */
     right: calc(50% - 45px);
     width: 94px;
     height: 91px;
@@ -877,6 +960,8 @@
     background-size: 93px 91px;
     content: "";
   }
+
+  
 
   .tomato__about-us__card::after {
     display: none;
@@ -1118,6 +1203,105 @@
     height: 55px;
     order: 2;
   }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 576px){
+  .tomato__about-us__card::before {
+    bottom: 430px !important;
+  }
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 743px){
+
+  .tomato__col {
+    width: 49%;
+  }
+
+  .tomato__picture {
+    width: 100%;
+  }
+
+  .tomato__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+  }
+
+  .tomato__col3 {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tomato__col3 .tomato__picture{
+    width: 49%;
+  }
+
+  .tomato__col3>picture:nth-child(1) img {
+    margin-top: -50px;
+  }
+
+  .tomato__col3>picture:nth-child(3) img {
+    margin-top: -100px;
+  }
+
+  .tomato__gallery__title {
+    font-size: 75px;
+  }
+
+  .tomato__about-us {
+    padding-bottom: 100px;
+  }
+
+  .tomato__gallery__title::after {
+    right: 30px;
+    top: unset;
+    bottom: -50px;
+    width: 120px;
+    height: 120px;
+  }
+
+  .tomato__footer__produced-by-logo {
+    display: none;
+  }
+
+  .tomato__about-us__title {
+    font-size: 100px;
+  }
+
+  .tomato__about-us__card {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tomato__about-us__card::before {
+    top: unset;
+    bottom: 500px;
+    right: 220px;
+    background-size: contain;
+  }
+
+  .tomato__about-us__card::after {
+    display: none;
+  }
+
+  .tomato__about-us__card .tomato__about-us__card-img {
+    width: 100%;
+    max-width: unset;
+  }
+
+  .tomato__about-us__card:nth-of-type(2n) {
+    margin-top: 200px;
+  }
+
+  .tomato__contact {
+    background-position: left calc(50% - 250px) bottom 50px;
+  }
+
 }
 
 @-webkit-keyframes rotate {

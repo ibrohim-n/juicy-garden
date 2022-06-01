@@ -92,6 +92,7 @@ img {
   width: 100%;
   height: auto;
   vertical-align: middle;
+  object-fit: cover;
 }
 
 main {
@@ -325,7 +326,6 @@ main {
   border: 2px solid #5F4A96;
 }
 
-
 .external-site__external-link--red {
   background-image: url("../images/icon-external-link-red.svg");
   background-color: #FFF2F2;
@@ -335,7 +335,6 @@ main {
   border: 2px solid #DE0D17;
 
 }
-
 
 /* INDEX CONTACT DESKTOP*/
 .contact {

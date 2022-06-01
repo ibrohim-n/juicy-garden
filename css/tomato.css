@@ -1,8 +1,13 @@
 /* TOMATO */
 .tomato {
-  background-image: url("../images/tomato-body-bg.png");
-  background-repeat: no-repeat;
+  background: url("../images/tomato-body-bg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 /* TOMATO HEADER DESKTOP */
@@ -202,6 +207,10 @@
 
 
 /* TOMATO GALLERY DESKTOP */
+.tomato__gallery {
+  padding-bottom: 200px;
+}
+
 .tomato__gallery__title {
   position: relative;
   margin-top: 0;
@@ -228,7 +237,6 @@
   animation: rotate 2s linear infinite;
 }
 
-
 .tomato__gallery-wrapper {
   display: flex;
   justify-content: space-between;
@@ -247,10 +255,263 @@
   margin-bottom: 30px;
 }
 
+/* TOMATO SWEET DESKTOP */
+.tomato__sweet {
+  /* background-image: url("../images/sweet-bg.png"); */
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 175px;
+}
+
+.tomato__sweet-wrapper {
+  width: 100%;
+  border: 1px solid #000000;
+  border-left: 0;
+  border-right: 0;
+}
+
+.tomato__sweet__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.tomato__sweet__title-wrapper {
+  padding: 45px 149px 45px 0;
+  padding-right: 149px;
+  border-right: 1px solid #000000;
+}
+
+.tomato__sweet__title {
+  max-width: 686px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tomato__sweet__txt-wrapper {
+  flex-grow: 1;
+  padding-left: 118px;
+}
+
+.tomato__sweet__txt {
+  position: relative;
+  width: 100%;
+  max-width: 377px;
+  margin: 0;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: -0.05em;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.tomato__sweet__txt::after {
+  position: absolute;
+  bottom: -50px;
+  right: -50px;
+  width: 60px;
+  height: 60px;
+  background-image: url("../images/sweet-decor.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+}
+
+/* TOMATO CONTACT DESKTOP*/
+.tomato__contact {
+  background-color: #FFFFFF;
+  padding-top: 120px;
+  padding-bottom: 170px;
+  background-image: url("../images/tomato-contact-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 600px) 240px;
+}
+
+.tomato__contact__container {
+  max-width: 665px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tomato__contact__title {
+  margin-top: 0;
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 137px;
+  text-align: center;
+  letter-spacing: -0.06em;
+  color: rgba(0, 0, 0, 1);
+}
+
+.tomato__contact__tel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 447px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 112px;
+  margin-bottom: 56px;
+  background-color: #ECFFF1;
+  border-radius: 24px;
+  background-image: url("../images/icon-dial.svg"), url("../images/icon-external-link-grey.svg");
+  background-repeat: no-repeat;
+  background-position: top 24px left 24px, top 40px right 24px;
+}
+
+.tomato__contact__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.tomato__contact__tel {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.tomato__contact__tel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.tomato__contact__email-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 124px 24px 112px;
+  margin-bottom: 56px;
+  background-color: #FFF7EC;
+  border-radius: 24px;
+  background-image: url("../images/icon-mailto.svg"), url("../images/icon-external-link-grey.svg");
+  background-repeat: no-repeat;
+  background-position: top 24px left 24px, top 40px right 24px;
+}
+
+.tomato__contact__mail {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.tomato__contact__mail::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.tomato__contact__address-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 665px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 50px 24px 112px;
+  background-color: #FFF1F1;
+  border-radius: 24px;
+  background-image: url("../images/icon-address.svg"), url("../images/icon-external-link-grey.svg");
+  background-repeat: no-repeat;
+  background-position: top 24px left 24px, top 40px right 24px;
+  word-break: break-word;
+}
+
+.tomato__contact__address {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.04em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.tomato__contact__address::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.tomato__contact__address-txt {
+  font-style: normal;
+  padding-right: 10px;
+}
+
+/* TOMATO FOOTER DESKTOP */
+.tomato__footer {
+  padding: 57px 0;
+  background-color: #FFFFFF;
+  background-image: url("../images/tomato-body-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.tomato__footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tomato__footer__main-logo {
+  width: 172px;
+  height: 44px;
+}
+
+.tomato__footer__socials {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tomato__footer__socials-item:not(:last-child) {
+  margin-right: 48px;
+}
+
+.tomato__footer__produced-by-logo {
+  width: 164px;
+  height: 62px;
+}
+
+
 @media only screen and (max-width: 744px) {
 
   /* TOMATO TABLET*/
   .tomato {
+    /* background: none; */
     background-image: url("../images/tomato-body-bg-tablet.png");
   }
 
@@ -359,11 +620,15 @@
   }
 
   /* TOMATO GALLERY TABLET */
+  .tomato__gallery {
+    padding-bottom: 113px;
+  }
+
   .tomato__gallery__title {
     margin-bottom: 120px;
     font-size: 80px;
   }
-  
+
   .tomato__gallery__title::after {
     width: 144px;
     height: 166px;
@@ -404,11 +669,91 @@
   .tomato__col3>picture:nth-child(3) img {
     margin-top: -150px;
   }
+
+  /* TOMATO SWEET TABLET */
+  .tomato__sweet {
+    padding-bottom: 150px;
+  }
+
+  .tomato__sweet-wrapper {
+    border: none;
+  }
+
+  .tomato__sweet__container {
+    flex-direction: column;
+  }
+
+  .tomato__sweet__title-wrapper {
+    padding: 24px 0;
+    border-right: 0;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+  .tomato__sweet__title {
+    font-size: 66px;
+  }
+
+  .tomato__sweet__txt-wrapper {
+    position: relative;
+    padding: 24px 0;
+  }
+
+  .tomato__sweet__txt {
+    position: relative;
+    max-width: 100%;
+    padding-bottom: 24px;
+    font-size: 30px;
+    line-height: 110%;
+    letter-spacing: -0.05em;
+    border-bottom: 1px solid #000000;
+  }
+
+  .tomato__sweet__txt::after {
+    position: absolute;
+    bottom: -35px;
+    right: 60px;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* TOMATO TABLET*/
+  .tomato__contact {
+    padding-top: 80px;
+    padding-bottom: 210px;
+    background-image: url("../images/tomato-contact-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 244px) bottom 30px;
+    background-size: 256px 272px;
+  }
+  .tomato__contact__address-wrapper {
+    background-position: top 34px left 24px, top 40px right 24px;
+
+  }
+
+
+
+  /* TOMATO FOOTER TABLET */
+  .tomato__footer {
+    padding: 55px 0;
+  }
+
+  .tomato__footer__main-logo {
+    width: 150px;
+    height: 38px;
+  }
+
+  .tomato__footer__produced-by-logo {
+    width: 140px;
+    height: 53px;
+  }
 }
 
 @media only screen and (max-width: 576px) {
+
   /* TOMATO MOBILE*/
   .tomato {
+    /* background: none; */
     background-image: url("../images/tomato-body-bg-mobile.png");
   }
 
@@ -434,7 +779,7 @@
     height: 29px;
   }
 
-  /* VERY_BERRY HERO MOBILE*/
+  /* TOMATO HERO MOBILE*/
   .tomato__hero {
     padding-top: 53px;
     padding-bottom: 324px;
@@ -563,7 +908,24 @@
   }
 
   /* TOMATO GALLERY MOBILE */
-  j .tomato__gallery-wrapper {
+  .tomato__gallery {
+    padding-bottom: 94px;
+  }
+
+  .tomato__gallery__title {
+    margin-bottom: 163px;
+    font-size: 49px;
+  }
+
+  .tomato__gallery__title::after {
+    width: 60px;
+    height: 70px;
+    top: 220px;
+    right: 36px;
+    background-size: contain;
+  }
+
+  .tomato__gallery-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -596,17 +958,165 @@
     margin-top: -65px;
   }
 
-  .tomato__gallery__title {
-    margin-bottom: 163px;
-    font-size: 49px;
+  /* TOMATO SWEET MOBILE */
+  .tomato__sweet {
+    padding-bottom: 126px;
   }
-  
-  .tomato__gallery__title::after {
+
+  .tomato__sweet-wrapper {
+    position: relative;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+
+  .tomato__sweet-wrapper::after {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+    content: "";
+  }
+
+  .tomato__sweet__title-wrapper {
+    padding: 24px 0;
+    border-right: 0;
+    border: none;
+  }
+
+  .tomato__sweet__title {
+    max-width: unset;
+    font-size: 34px;
+    letter-spacing: -0.03em;
+  }
+
+  .tomato__sweet__txt-wrapper {
+    padding: 24px 0;
+  }
+
+  .tomato__sweet__txt {
+    max-width: initial;
+    padding: 0;
+    font-weight: 800;
+    font-size: 18px;
+    border: none;
+  }
+
+  .tomato__sweet__txt::after {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
     width: 60px;
-    height: 70px;
-    top: 220px;
-    right: 36px;
-    background-size: contain;
+    height: 60px;
+  }
+
+  /* TOMATO CONTACT MOBILE*/
+  .tomato__contact {
+    padding-top: 56px;
+    padding-bottom: 215px;
+    background-image: url("../images/tomato-contact-bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% - 100px) bottom 50px;
+    background-size: 188px 170px;
+  }
+
+  .tomato__contact__container {
+    max-width: unset;
+  }
+
+  .tomato__contact__title {
+    font-size: 70px;
+    line-height: 96px;
+  }
+
+  .tomato__contact__tel-wrapper {
+    max-width: unset;
+    padding: 26px 120px 26px 80px;
+    margin-bottom: 50px;
+    background-size: 48px, 32px;
+    background-position: top 24px left 16px, center right 16px;
+  }
+
+  .tomato__contact__subtitle {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .tomato__contact__tel {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .tomato__contact__email-wrapper {
+    max-width: unset;
+    padding: 24px 93px 24px 80px;
+    margin-bottom: 50px;
+    background-repeat: no-repeat;
+    background-size: 48px, 32px;
+    background-position: top 24px left 16px, center right 16px;
+  }
+
+  .tomato__contact__mail {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .tomato__contact__address-wrapper {
+    max-width: unset;
+    padding: 24px 76px 24px 80px;
+    background-size: 48px, 32px;
+    background-position: top 34px left 16px, center right 16px;
+    word-break: break-word;
+  }
+
+  .tomato__contact__address {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .tomato__contact__address-txt {
+    font-style: normal;
+    padding-right: 10px;
+  }
+
+  /* TOMATO FOOTER MOBILE */
+  .tomato__footer {
+    padding: 48px 0;
+  }
+
+  .tomato__footer__container {
+    flex-wrap: wrap;
+    justify-content: initial;
+  }
+
+  .tomato__footer__main-logo {
+    width: 136px;
+    height: 35px;
+    margin-right: auto;
+  }
+
+  .tomato__footer__socials {
+    max-width: 260px;
+    margin-top: 40px;
+    order: 3;
+    padding: 0;
+    margin: 40px auto 0 auto;
+  }
+
+  .tomato__footer__socials-link svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tomato__footer__socials-item:not(:last-child) {
+    margin-right: 48px;
+  }
+
+  .tomato__footer__produced-by-logo {
+    width: 150px;
+    height: 55px;
+    order: 2;
   }
 }
 

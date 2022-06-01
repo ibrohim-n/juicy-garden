@@ -154,6 +154,11 @@ main {
 }
 
 .language {
+  padding-top: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
   position: relative;
   width: 100px;
   height: 40px;
@@ -162,6 +167,7 @@ main {
   border: 0.5px solid #1DABDD;
   border-radius: 110px;
   cursor: pointer;
+  z-index: 1;
 }
 
 .language__chkbx:focus {
@@ -173,27 +179,56 @@ main {
 }
 
 .language__chkbx:checked~.switch-circle {
-  transform: translateX(45px);
+  transform: translateX(43px);
+}
+
+.language__chkbx:checked ~ .switch-lang1 {
+  color: #000000;
+}
+
+.language__chkbx:checked ~ .switch-lang2 {
+  color: #FFFFFF;
+}
+
+.switch-lang {
+  padding-left: 17px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: right;
+  letter-spacing: -0.02em;
+  color: black;
+  z-index: 10;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.switch-lang1 {
+  color: white;
+}
+
+.switch-lang2 {
+  padding-left: 20px;
 }
 
 .switch-circle {
   position: absolute;
-  top: 4px;
+  top: 3px;
+  bottom: 4px;
   left: 6px;
   width: 44px;
   height: 32px;
-  display: block;
   padding: 4px 9px 9px 9px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #FFFFFF;
   background: #1DABDD;
   border-radius: 110px;
   transition: 0.3s ease transform;
+  z-index: -2;
 }
+
 
 /* INDEX HERO DESKTOP*/
 .hero {
@@ -228,6 +263,7 @@ main {
 }
 
 .external-site {
+  position: relative;
   max-width: 509px;
   display: flex;
   flex-direction: column;
@@ -272,12 +308,34 @@ main {
   background-repeat: no-repeat;
   background-size: 32px;
   background-position: center;
+  border: 2px solid transparent;
 }
+
+.external-site__external-link::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+}
+
+.external-site__external-link:hover {
+  border: 2px solid #5F4A96;
+}
+
 
 .external-site__external-link--red {
   background-image: url("../images/icon-external-link-red.svg");
   background-color: #FFF2F2;
 }
+
+.external-site__external-link--red:hover {
+  border: 2px solid #DE0D17;
+
+}
+
 
 /* INDEX CONTACT DESKTOP*/
 .contact {
@@ -414,7 +472,7 @@ main {
 
 .contact__address-txt {
   font-style: normal;
-  padding-right: 10px;
+  padding-right: 12px;
 }
 
 /* INDEX FOOTER DESKTOP*/
@@ -1484,10 +1542,15 @@ main {
   .language {
     width: 92px;
     height: 37px;
+    padding-top: 2px;
   }
 
   .language__chkbx:checked~.switch-circle {
     transform: translateX(40px);
+  }
+
+  .switch-lang {
+    padding-left: 15px;
   }
 
   .switch-circle {
@@ -1553,7 +1616,7 @@ main {
 
   .contact__address-wrapper {
     padding: 24px 0px 26px 90px;
-    background-position: top 24px left 16px, top 40px right 24px;
+    background-position: top 34px left 16px, top 40px right 24px;
     background-size: 48px, 32px;
     word-break: break-word;
   }

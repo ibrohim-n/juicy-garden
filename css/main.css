@@ -182,11 +182,11 @@ main {
   transform: translateX(43px);
 }
 
-.language__chkbx:checked ~ .switch-lang1 {
+.language__chkbx:checked~.switch-lang1 {
   color: #000000;
 }
 
-.language__chkbx:checked ~ .switch-lang2 {
+.language__chkbx:checked~.switch-lang2 {
   color: #FFFFFF;
 }
 
@@ -497,6 +497,7 @@ main {
 .socials__item:not(:last-child) {
   margin-right: 48px;
 }
+
 /* VERY_BERRY */
 /* VERY_BERRY HEADER DESKTOP*/
 .btn-scroll-top {
@@ -720,6 +721,14 @@ main {
   padding: 0 0 10px 0;
 }
 
+.very-berry__product-overview__dt-wrapper:first-child {
+  padding-top: 0;
+}
+
+.very-berry__product-overview__dt-wrapper:last-child { 
+  padding-bottom: 7px;
+}
+
 .very-berry__product-overview__dt-wrapper:not(:last-child) {
   margin-bottom: 120px;
 }
@@ -833,8 +842,9 @@ main {
 }
 
 .very-berry__about-bluberries__images-img {
-  width: 447px;
+  width: 100%;
   height: 300px;
+  object-fit: cover;
 }
 
 /* VERY_BERRY DELIVERY DESKTOP */
@@ -1157,15 +1167,14 @@ main {
   height: 62px;
 }
 
-/* TOMATOES DESKTOP */
-
 /* TABLET */
-@media only screen and (max-width: 744px) {
+@media only screen and (max-width: 1054px) {
   .container {
     max-width: 744px;
     padding-right: 32px;
     padding-left: 32px;
   }
+
   /*INDEX HEADER TABLET  */
   .main-logo:hover {
     opacity: 1
@@ -1219,6 +1228,7 @@ main {
     bottom: 100px;
     right: 16px;
   }
+
   /* VERY_BERRY */
   /* VERY_BERRY HEADER TABLET*/
   .very-berry-header-hero-wrapper {
@@ -1241,9 +1251,14 @@ main {
     height: 52px;
   }
 
+  .produced-by-logo {
+    width: 140px;
+    height: 53px;
+  }
+
   /* VERY_BERRY HERO TABLET*/
   .very-berry__hero {
-    padding-top: 115px;
+    padding-top: 120px;
     padding-bottom: 335px;
   }
 
@@ -1436,7 +1451,7 @@ main {
   }
 
   .very-berry__about-bluberries__images-img {
-    width: 324px;
+    width: 100%;
     height: 217px;
   }
 
@@ -1517,8 +1532,87 @@ main {
   }
 }
 
+@media only screen and (max-width: 1399px) and (min-width: 1055px) {
+  .very-berry__product-overview__dt {
+    margin-right: 100px;
+  }
+
+  .very-berry__product-overview__title {
+    font-size: 150px;
+  }
+
+  .very-berry__export-bluberry__title {
+    font-size: 195px;
+  }
+
+  .very-berry__product-overview__dd {
+    font-size: 65px;
+  }
+}
+
+/* TABLET SMALL */
+@media only screen and (max-width: 743px) and (min-width: 534px) {
+  .very-berry__hero__content {
+    align-items: flex-start;
+  }
+
+  .very-berry__about-bluberries__images-list {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .very-berry__about-bluberries__card-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .very-berry__export-bluberry {
+    background-size: cover;
+  }
+
+  .very-berry__export-bluberry__title {
+    font-size: 100px;
+    line-height: 1.5;
+  }
+  .very-berry__export-routes {
+    flex-direction: column;
+
+  }
+  .very-berry__export-routes>li>span {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .very-berry__product-overview {
+    padding-top: 100px;
+  }
+
+  .very-berry__product-overview::before {
+    top: 143px;
+  }
+
+  .very-berry__product-overview__title {
+    font-size: 80px;
+    margin-bottom: 80px;
+  }
+
+  .very-berry__about-bluberries__images-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .very-berry__product-overview__dd  {
+    font-size: 52px;
+  }
+
+  .very-berry__footer__produced-by-logo {
+    display: none;
+  }
+}
+
 /* MOBILE */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 533px) {
   .container {
     max-width: 576px;
     padding-right: 16px;
@@ -1647,6 +1741,7 @@ main {
   .socials__item:not(:last-child) {
     margin-right: 40px;
   }
+
   /* VERY_BERRY */
   /* VERY_BERRY HEADER MOBILE*/
   .btn-scroll-top {
@@ -2035,7 +2130,7 @@ main {
   .very-berry__contact__tel-wrapper {
     max-width: unset;
     padding: 26px 120px 26px 80px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     background-size: 48px, 32px;
     background-position: top 24px left 16px, center right 16px;
   }
@@ -2053,7 +2148,7 @@ main {
   .very-berry__contact__email-wrapper {
     max-width: unset;
     padding: 24px 93px 24px 80px;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     background-repeat: no-repeat;
     background-size: 48px, 32px;
     background-position: top 24px left 16px, center right 16px;
@@ -2067,6 +2162,7 @@ main {
   .very-berry__contact__address-wrapper {
     max-width: unset;
     padding: 24px 76px 24px 80px;
+    margin-bottom: 24px;
     background-size: 48px, 32px;
     background-position: top 24px left 16px, center right 16px;
     word-break: break-word;
@@ -2106,7 +2202,7 @@ main {
     margin: 40px auto 0 auto;
   }
 
-  .very-berry__footer__socials-link svg{
+  .very-berry__footer__socials-link svg {
     width: 40px;
     height: 40px;
   }
@@ -2119,5 +2215,52 @@ main {
     width: 150px;
     height: 55px;
     order: 2;
+  }
+}
+
+/* MOBILE SMALL */
+@media only screen and (max-width: 374px) {
+  .btn-scroll-top {
+    width: 45px;
+    height: 45px;
+    background-size: 20px;
+  }
+
+  .very-berry__hero__download-presentation-link {
+    padding: 12px 12px 12px 35px;
+    background-position: left 10px center;
+  }
+
+  .very-berry__product-overview {
+    padding-top: 100px;
+  }
+
+  .very-berry__product-overview__title {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+
+  .very-berry__product-overview__dd {
+    font-size: 32px;
+  }
+
+  .very-berry__about-bluberries__card-txt {
+    max-width: 320px;
+  }
+
+  .very-berry__contact__tel-wrapper {
+    padding: 26px 26px 26px 80px;
+  }
+
+  .very-berry__contact__mail {
+    word-break: break-all;
+  }
+
+  .very-berry__footer__main-logo {
+    width: 120px;
+  }
+
+  .very-berry__footer__produced-by-logo {
+    width: 130px;
   }
 }

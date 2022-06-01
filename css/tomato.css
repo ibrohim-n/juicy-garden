@@ -1212,7 +1212,7 @@
 }
 
 
-@media only screen and (min-width: 376px) and (max-width: 743px){
+@media only screen and (min-width: 500px) and (max-width: 743px){
 
   .tomato__col {
     width: 49%;

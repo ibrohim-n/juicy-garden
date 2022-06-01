@@ -2263,3 +2263,11 @@ main {
     width: 130px;
   }
 }
+
+@media only screen and (min-width: 393px) and (max-width: 415px) {
+  .tomato__col3>picture:nth-child(3) img {
+    margin-right: 184px !important;
+  }
+}
+
+

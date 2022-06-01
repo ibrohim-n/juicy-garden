@@ -961,8 +961,6 @@
     content: "";
   }
 
-
-
   .tomato__about-us__card::after {
     display: none;
   }
@@ -1211,7 +1209,6 @@
     bottom: 430px !important;
   }
 }
-
 
 @media only screen and (min-width: 414px) and (max-width: 743px) {
 

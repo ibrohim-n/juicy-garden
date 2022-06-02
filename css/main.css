@@ -519,7 +519,7 @@ main {
 }
 
 .very-berry-header-hero-wrapper {
-  background-image: url("../images/very-berry-hero-img.png");
+  background-image: url("../images/very-berry-hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -617,7 +617,7 @@ main {
 .very-berry__export-bluberry {
   padding: 382px 128px 24px 128px;
   margin-bottom: 32px;
-  background-image: url("../images/export-bluberry.png");
+  background-image: url("../images/export-bluberry.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1231,7 +1231,7 @@ main {
   /* VERY_BERRY */
   /* VERY_BERRY HEADER TABLET*/
   .very-berry-header-hero-wrapper {
-    background-image: url("../images/very-berry-hero-img-tablet.png");
+    background-image: url("../images/very-berry-hero-img-tablet.jpg");
     /* background-size: contain; */
   }
 
@@ -1288,7 +1288,7 @@ main {
   /* VERY_BERRY EXPORT TABLET*/
   .very-berry__export-bluberry {
     padding: 186px 0 0 0;
-    background-image: url("../images/export-bluberry-tablet.png");
+    background-image: url("../images/export-bluberry-tablet.jpg");
     background-size: contain;
   }
 
@@ -1749,7 +1749,7 @@ main {
   }
 
   .very-berry-header-hero-wrapper {
-    background-image: url("../images/very-berry-hero-img-mobile.png");
+    background-image: url("../images/very-berry-hero-img-mobile.jpg");
     background-size: cover;
   }
 
@@ -1854,7 +1854,7 @@ main {
   /* VERY_BERRY EXPORT MOBILE*/
   .very-berry__export-bluberry {
     padding: 168px 0px 20px 0px;
-    background-image: url("../images/export-bluberry-mobile.png");
+    background-image: url("../images/export-bluberry-mobile.jpg");
     background-size: contain;
   }
 

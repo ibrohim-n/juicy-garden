@@ -1166,6 +1166,21 @@ main {
   height: 62px;
 }
 
+/* DESKTOP SMALL */
+@media only screen and (max-width: 1919px) and (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+
+  .hero {
+    background-position: calc(50% - 700px) 440px, calc(50% + 680px) 400px;
+  }
+
+  .contact__title {
+    font-size: 80px;
+  }
+}
+
 /* TABLET */
 @media only screen and (max-width: 1054px) {
   .container {
